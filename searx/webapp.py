@@ -1222,11 +1222,8 @@ def stats_checker():
 def robots():
     return Response(
         """User-agent: *
-Allow: /info/en/about
-Disallow: /stats
-Disallow: /image_proxy
-Disallow: /preferences
-Disallow: /*?*q=*
+Disallow: *
+
 """,
         mimetype='text/plain',
     )
